@@ -44,7 +44,7 @@ Example result
 This is a result of running Accentizer on some random fonts from Google Web
 Fonts
 
-![](http://github.com/sztupy/accentizer/raw/master/example.png) 
+![](https://raw.githubusercontent.com/sztupy/accentizer/master/example.png) 
 
 
 Usage
