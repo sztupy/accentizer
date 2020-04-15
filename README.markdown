@@ -29,14 +29,19 @@ Installation
 
 Install FontForge from http://fontforge.sourceforge.net/
 
-Windows+cygwin builds can be found at http://www.geocities.jp/meir000/fontforge/
+Windows builds can be found at https://fontforge.org/en-US/downloads/windows-dl/
 
 After installing fontforge you can run the script using fontforge. For example
 on Windows you can write:
 
     fontforge.bat accentizer.py Lato-Black.ttf
 
-See `Usage` for more information.
+You can also use the attached dockerfile to get accentizer running, e.g:
+
+    docker build -t accentizer .
+    docker run -v ${PWD}:/fonts accentizer /fonts/<name_of_font>.ttf
+
+See also `Usage` for more information.
 
 Example result
 --------------
@@ -61,7 +66,7 @@ Options
 
 * `--ffont` generate accented fonts even if they claim to exist in font
 * `--faccent` generate double acute from single acute even if there is a double
-acute modifier present  
+acute modifier present
 * `--trans=xx` translate double accents closer by xx pixels when double acute
 was generated from single acute. Default: 40
 
