@@ -23,12 +23,19 @@ class AccentizerServer < Sinatra::Base
       halt 400
     end
 
+    options = +""
+    options << " --ffont" if params[:ffont]
+    options << " --faccent" if params[:faccent]
+    if params[:trans] && params[:trans].to_i > 0 && params[:trans].to_i < 400
+      options << " --trans=#{params[:trans].to_i}"
+    end
+
     tmpfile_name = tmpfile.path
     tmpfile_no_extension = tmpfile_name.chomp(File.extname(tmpfile_name))
 
     halt 400 if File.size(tmpfile_name) > 1_048_576
 
-    system("fontforge /usr/src/app/accentizer.py '#{tmpfile_name}' 2>&1")
+    system("fontforge /usr/src/app/accentizer.py #{options} '#{tmpfile_name}' 2>&1")
 
     out_file = tmpfile_no_extension + "out.ttf"
     halt 422 unless File.exist?(out_file)

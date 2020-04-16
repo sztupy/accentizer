@@ -1,0 +1,8 @@
+.terraform
+terraform.tfvars
+*.tfstate.backup
+/bower_components/*
+/.sass-cache/*
+*.DS_Store
+/stylesheets/*.css
+temp
