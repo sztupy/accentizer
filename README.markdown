@@ -36,12 +36,7 @@ on Windows you can write:
 
     fontforge.bat accentizer.py Lato-Black.ttf
 
-You can also use the attached dockerfile to get accentizer running, e.g:
-
-    docker build -t accentizer .
-    docker run -v ${PWD}:/fonts accentizer /fonts/<name_of_font>.ttf
-
-See also `Usage` for more information.
+There is also an option to run this using docker. See `Usage` for more information.
 
 Example result
 --------------
@@ -55,11 +50,22 @@ Fonts
 Usage
 -----
 
+To run natively:
+
     accentizer.py [options] {filename}
 
 or
 
     fontforge accentizer.py [options] {filename}
+
+You can also use the attached dockerfile to get accentizer running, e.g:
+
+    docker run -v ${PWD}:/fonts sztupy/accentizer convert /fonts/<name_of_font>.ttf
+
+The container also hosts a small webserver you can use to convert files
+
+    docker run --rm -p 8080:8080 -ti sztupy/accentizer
+    curl -v -X POST -F file=input.ttf 127.0.0.1:8080/accentize --output output.ttf
 
 Options
 -------
