@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Accentizer - Ékezesítő">
-    <meta property="twitter:title" content="Accentizer - Ékezesítő">
-    <meta property="og:description" content="Add missing accents to your fonts">
+    <meta property="og:title" content="Accentizer - Ékezetesítő">
+    <meta property="twitter:title" content="Accentizer - Ékezetesítő">
+    <meta property="og:description" content="Betűtípusékezesítő-alkalmazás">
     <meta property="twitter:description" content="Betűtípusékezesítő-alkalmazás">
     <meta property="og:image" content="https://sztupy.hu/accentizer/images/accentizer-logo-512.png">
     <meta property="twitter:image" content="https://sztupy.hu/accentizer/images/accentizer-logo-512.png">
@@ -68,20 +68,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="large-4 large-centered text-center columns end">
+        <div class="large-6 large-centered columns end">
           <form action="https://accentizer.raven.scot/accentize" enctype="multipart/form-data" method="post">
             <div class="row">
-              <label for="file">Add meg a konvertálandó betűtípust</label>
+              <label for="file"><h4>Először add meg a konvertálandó betűtípust</h4></label>
               <input type="file" id="file" name="file" accept=".ttf,.otf">
             </div>
             <div class="row">
-              Finomhangolás:
-              <input type="checkbox" id="ffont" name="ffont"><label for="ffont">Ö/Ű betűk őjragennerálása</label>
-              <input type="checkbox" id="faccent" name="faccent"><label for="faccent">Dupla ékezet újragenerálása</label>
-              Néhány betűtípus azt hazudja, hogy tartalmazza az ő, ű betűket miközben valójában nem, vagy hibásan. Ezek az opciók jelzik a rendszernek hogy mindenképp generálja újra a megfelelő jeleket
+              <div><h4>Finomhangold az műveletet:</h4></div>
+              <div><input type="checkbox" id="ffont" name="ffont"><label for="ffont">Ö/Ű betűk újragenerálása</label></div>
+              <div><input type="checkbox" id="faccent" name="faccent"><label for="faccent">Dupla ékezet újragenerálása</label></div>
+              <div><small>Néhány betűtípus azt hazudja, hogy tartalmazza az ő, ű betűket, illetve a dupla ékezet jelet, miközben valójában csak hibásan. Ezek az opciók jelzik a rendszernek hogy mindenképp generálja újra ezelet a karaketerket</small></div>
             </div>
             <div class="row">
-              <label for="submit">Majd nyomd meg a gombot!</label>
+              <label for="submit"></4>Majd végül nyomd meg a gombot!</h4></label>
               <input type="submit" value="Ékezetesítsd!">
             </div>
           </form>

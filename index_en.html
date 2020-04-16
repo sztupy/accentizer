@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Accentizer - Ékezesítő">
-    <meta property="twitter:title" content="Accentizer - Ékezesítő">
+    <meta property="og:title" content="Accentizer - Ékezetesítő">
+    <meta property="twitter:title" content="Accentizer - Ékezetesítő">
     <meta property="og:description" content="Add missing accents to your fonts">
     <meta property="twitter:description" content="Add missing accents to your fonts">
     <meta property="og:image" content="https://sztupy.hu/accentizer/images/accentizer-logo-512.png">
@@ -67,20 +67,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="large-4 large-centered text-center columns end">
+        <div class="large-6 large-centered columns end">
           <form action="https://accentizer.raven.scot/accentize" enctype="multipart/form-data" method="post">
             <div class="row">
-              <label for="file">First upload the font you wish to convert</label>
+              <label for="file"><h4>First upload the font you wish to convert</h4></label>
               <input type="file" id="file" name="file" accept=".ttf,.otf">
             </div>
             <div class="row">
-              Fine tune:
-              <input type="checkbox" id="ffont" name="ffont"><label for="ffont">Force regeneration of glyphs</label>
-              <input type="checkbox" id="faccent" name="faccent"><label for="faccent">Force regeneration of double acute modifier</label>
-              Occasionally fonts might tell us that they support a specific glyph, although in reality they don't, or it's inncorrect. These options will allow the app to regenerate these glyphs even if they exist
+              <div><h4>Next fine tune the options:</h4></div>
+              <div><input type="checkbox" id="ffont" name="ffont"><label for="ffont">Force regeneration of glyphs</label></div>
+              <div><input type="checkbox" id="faccent" name="faccent"><label for="faccent">Force regeneration of double acute modifier</label></div>
+              <div><small>Occasionally fonts might tell us that they support a specific glyph, although in reality they don't, or it's inncorrect. These options will allow the app to regenerate these glyphs even if they exist</small></div>
             </div>
             <div class="row">
-              <label for="submit">Then press the button!</label>
+              <label for="submit"><h4>Finally press the button!</h4></label>
               <input type="submit" value="Accentize!">
             </div>
           </form>
