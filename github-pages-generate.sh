@@ -17,7 +17,6 @@ cp -a images temp
 cp *.txt temp
 cp *.html temp
 cp *.md temp
-cp CNAME temp
 cp LICENSE temp
 
 git checkout gh-pages
