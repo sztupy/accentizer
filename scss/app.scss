@@ -1,0 +1,102 @@
+@import "settings";
+@import "foundation";
+
+$secondary-background: #2980b9;
+
+body {
+  font-variant-ligatures: common-ligatures;
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga" 1;
+  -moz-font-feature-settings: "liga" 1;
+}
+
+.top-wrapper {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: $charcoal;
+  color: $silver;
+
+  h1 {
+    color: $silver;
+  }
+}
+
+.top-converter, footer {
+  background-color: $secondary-background;
+  color: $silver;
+  h1, h2, h3, h4, h5, h6, label {
+    color: $silver;
+  }
+}
+
+.settings-list {
+  list-style-type: none;
+}
+
+.full-width {
+  max-width: 1400px;
+}
+
+.footer {
+  background-color: $secondary-background;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: $silver;
+  i {
+    font-size: 100px;
+  }
+}
+
+.footer {
+  h4 {
+    color: $silver;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p, a {
+    font-weight: 300;
+    font-size: .6em;
+    color: $silver;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+.footer {
+  .columns:nth-child(n+2) {
+    border-left: 1px solid scale-color($silver, $lightness: -30%);
+    min-height: 200px;
+  }
+ }
+}
+
+.footer-links {
+  list-style-type: none;
+  li {
+    margin-top: .5em;
+  }
+  margin-left: 0px;
+}
+
+.unicode-table {
+  td {
+    padding: 5px;
+  }
+}
+
+.system-font {
+  * {
+    font-family: sans-serif;
+  }
+}
+
+.force-rtl {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.force-ltr {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}

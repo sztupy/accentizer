@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accentizer - az ékezetesítő</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Ékezetesítő</a></h1>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="index_en.html">English site</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <div class="top-wrapper">
+      <div class="row">
+        <div class="large-12 large-centered columns">
+          <h1 class="text-center"><img src="images/accentizer-logo-512.png"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <h3>Miért?</h3>
+          <p>
+            Számos latinbetűs írást használó nyelv használ különféle ékezeteket,
+            a magyar nyelvben ezek az á, é, í, ó, ö, ő, ú, ü valamint ű betűk, illetve ezek
+            nagybetűs változatai. Ezen betűk számos más nyelvben is megtalálhatóak, így a
+            legtöbb betűtípus fel van készítve támogatásukra. Azoban két karakter szinte kizárólag csak
+            a magyar nyelvben fordul elő: ezek az ő és ű betűk. Nemzetközi ritkaságuk miatt sajnos
+            számos betűtípusból hiányzanak ezek a karakterek, amelyek miatt számos betűtípust nehezebb
+            magyar nyelvű környezetben használni, és nem igazán t?rhet? velük az árvíz.
+          </p>
+        </div>
+        <div class="large-6 columns end">
+          <h3>Hogy?</h3>
+          <p>
+            Szerencsére a legtőbb betűkészletben található é betű, amiből ki lehet nyerni az
+            ékezetet, megduplázni, és ezt rátenni az o, illetve u betűkre. Az alábbi alkalmazás a
+            <a href="https://fontforge.org/en-US/">FontForge</a> segítségével végzi el automatikusan
+            ezen műveleteket, és generál egy olyan betűtípust, amivel már tűrhető az árvíz.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-converter">
+      <div class="row">
+        <div class="large-4 large-centered text-center columns end">
+          <h3>Próbáld ki!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 large-centered text-center columns end">
+          <form action="https://accentizer.sztupy.hu/accentize" method="post">
+            <div class="row">
+              <label for="file">Add meg a konvertálandó betűtípust</label>
+              <input type="file" id="file" name="file" accept=".ttf,.otf">
+            </div>
+            <div class="row">
+              <label for="submit">Majd nyomd meg a gombot!</label>
+              <input type="submit" value="Ékezetesítsd!">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="large-4 large-centered columns end">
+        <section id="advertisement" style="display: block; margin: auto; width:320px;">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+            style="display:inline-block;width:320px;height:100px"
+            data-ad-client="ca-pub-3770178749249223"
+            data-ad-slot="2417032645"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 id="font">További információk</h3>
+        <p>A honlapon használt alkalmazás letölthető <a href="https://github.com/sztupy/accentizer">GitHubról</a>, használatához feltelepített FontForge, vagy docker szükséges.</p>
+        <h3>Jogi tudinvalók</h3>
+        <p>Az alkalmazás a feltöltött betűtípusokat nem tárolja, azokat a konnverzió után a szerverről azonnal törli.
+          Bár az eszköz használata ingyenes, érdemes megemlítei, hogy számos betűtípus licenszfeltétele nem engedélyezi a módosítást. Mielőtt a fenti alkalmazást használnák gyűzűdjünk meg róla, hogy
+        módosítandó betűtípus enngedélyezi-e a módosításokat. Számos nyílt forráskódú betűtípus az <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">Open Font Licence</a>
+        alapján engedélyezi a módosításokat, cserébe a legtöbb betűtípuskatalógusból megvásárolható készletek nem. Mielőtt használnánk a betűtípust így a konvertálás előtt érdemes engedélyt kéri a tulajdonostól,
+        miközben érdemes azt is jelezni számára, hogy a betűkészletébe tegye bele a hiányzó ékezeteket.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="row full-width">
+        <div class="small-12 medium-3 large-4 columns">
+          <p></p>
+        </div>
+        <div class="small-12 medium-3 large-4 columns">
+          <p>A honlapon található Javascript kódrészletek az AGPLv3 alatt vannak licenszelve. A honlapon található egyéb erőforrások licensze CC-BY-SA 4.0.</p>
+        </div>
+        <div class="small-6 medium-3 large-2 columns">
+          <h4>Kapcsolódó erőforrások</h4>
+          <ul class="footer-links">
+            <li><a href="http://nfol.hu/hazafias-nepfont">Hazafias Népfont</a></li>
+            <li><a href="https://oldhungarian.eu">Magyar rovásírás betűtípus</a></li>
+          </ul>
+        </div>
+        <div class="small-6 medium-3 large-2 columns">
+          <h4>Forráskód</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/sztupy/accentizer">Honlap</a></li>
+            <li><a href="https://github.com/sztupy/accentizer">Alkalmazás</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-9404141-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accentizer</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Accentizer</a></h1>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="index_hu.html">Magyar nyelvű oldal</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <div class="top-wrapper">
+      <div class="row">
+        <div class="large-12 large-centered columns">
+          <h1 class="text-center"><img src="images/accentizer-logo-512.png"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <h3>Why?</h3>
+          <p>
+            Lot of languages that use the latin script use various accents. In Hungarian the acute accent is prevalent,
+            it exists on multiple characters: á, é, í, ó, ö, ő, ú, ü and ű, and their uppercase variants.
+            Most of these are also present in other languages therefore font support for them is good. However
+            two of these glyphs are almost exclusive to Hungarian: the glyphs ő and ű. Because of their international rarity
+            they are not present in huge array of fonts, making their use in a Hugarian context hard.
+          </p>
+        </div>
+        <div class="large-6 columns end">
+          <h3>How?</h3>
+          <p>
+            Fortunately most fonts do support the é glyph. From this glyph it's usually simple to extract the acute accent.
+            Then we only need to duplicate it to make it a double acute accent, and then add it to the o annd u glyphs. The
+            application below uses
+            <a href="https://fontforge.org/en-US/">FontForge</a> to automate these tasks, and generate a font with which you can
+            write out árvíztűrő tükörfúrógép.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-converter">
+      <div class="row">
+        <div class="large-4 large-centered text-center columns end">
+          <h3>Try it out!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 large-centered text-center columns end">
+          <form action="https://accentizer.sztupy.hu/accentize" method="post">
+            <div class="row">
+              <label for="file">First upload the font you wish to convert</label>
+              <input type="file" id="file" name="file" accept=".ttf,.otf">
+            </div>
+            <div class="row">
+              <label for="submit">Then press the button!</label>
+              <input type="submit" value="Accentize!">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="large-4 large-centered columns end">
+        <section id="advertisement" style="display: block; margin: auto; width:320px;">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+            style="display:inline-block;width:320px;height:100px"
+            data-ad-client="ca-pub-3770178749249223"
+            data-ad-slot="2417032645"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 id="font">More info</h3>
+        <p>The application is open source and cann be downloaded from <a href="https://github.com/sztupy/accentizer">GitHub</a>. To use it locally you either need fontforge installed, or docker running.</p>
+        <h3>Legal information</h3>
+        <p>The application does not store the uploaded fonts, it deletes them from the server after conversion.
+          Please note that although this app is free to use, in order to use it on your font you have to make sure to check with the font's licennce conditions whether it allows changes. Most open source
+          fonts using the <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">Open Font Licence</a>
+          are okay, but proprietary fonts downloaded from a font catalog - even if they are free - might disallow you to do that. To be sure you should contact the licence holder and ask them for permission, and
+          potentially also ask for them to include the missing glyphs the next time.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="row full-width">
+        <div class="small-12 medium-3 large-4 columns">
+          <p></p>
+        </div>
+        <div class="small-12 medium-3 large-4 columns">
+          <p>The custom JS code on this site is licenced under the AGPLv3. Other resources are licenced under the CC-BY-SA 3.0.</p>
+        </div>
+        <div class="small-6 medium-3 large-2 columns">
+          <h4>Related resources</h4>
+          <ul class="footer-links">
+            <li><a href="http://nfol.hu/hazafias-nepfont">Hazafias Népfont</a></li>
+            <li><a href="https://oldhungarian.eu">Old Hungarian font</a></li>
+          </ul>
+        </div>
+        <div class="small-6 medium-3 large-2 columns">
+          <h4>Source code</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/sztupy/accentizer/tree/gh-pages-source">Website</a></li>
+            <li><a href="https://github.com/sztupy/accentizer">App</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-9404141-8', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

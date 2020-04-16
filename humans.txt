@@ -1,0 +1,8 @@
+/* Accenntizer is a tool to help add double acute characters to fonts that might miss them */
+/* sztupy.hu/accentizer */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Zurb
+  Software: vim, git, docker, ruby, fontforge
