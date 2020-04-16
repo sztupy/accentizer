@@ -30,10 +30,10 @@ class AccentizerServer < Sinatra::Base
 
     system("fontforge /usr/src/app/accentizer.py '#{tmpfile_name}' 2>&1")
 
-    content_type 'application/octet-stream'
-
     out_file = tmpfile_no_extension + "out.ttf"
     halt 422 unless File.exist?(out_file)
+
+    attachment("accentized.ttf")
 
     File.read(out_file, mode: "rb")
   ensure
